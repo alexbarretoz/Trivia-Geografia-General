@@ -2,6 +2,7 @@
 #Silabuz
 #Alex Barreto
 
+import random 
 #puntos
 puntaje = 0
 iniciar_trivia = True
@@ -32,7 +33,7 @@ print(
 #ciclo de intentos 
 while iniciar_trivia == True:
   intentos += 1
-  puntaje= 0
+  
 
   #muestra los intentos
   print(MAGENTA+"\nIntento número:"+RESET, intentos,"\n")
@@ -200,11 +201,14 @@ while iniciar_trivia == True:
   #condicional si desea jugar de Nuevo
   print(MAGENTA+"\n¿Deseas intentar la trivia nuevamente?"+RESET)
   repetir_trivia = input("Ingresa 'si' para repetir, o cualquier tecla para finalizar: ").lower()
+
   
   if repetir_trivia != "si":  
      print("\n",nombre, GREEN+",Espero que lo hayas pasado bien, hasta pronto!"+RESET)
      iniciar_trivia = False  # evitamos que se repita.
 
-
-  
+  else:
+     puntaje =random.randint(0, 10)
+     print("\n",MAGENTA+"Te Regalaremos puntos al azar para aumentar tus posibilidades en el proximo intento "+RESET, puntaje," Puntos")
+   
 
