@@ -45,7 +45,7 @@ while iniciar_trivia == True:
   print("d) Alemania")
   
   # Almacenamos la respuesta 
-  respuesta_1 = input("\nTu respuesta: ")
+  respuesta_1 = input("\nTu respuesta: ").lower()
   
   #Validacion Respuesta 1
   while respuesta_1 not in ("a", "b", "c", "d"):
@@ -78,7 +78,7 @@ while iniciar_trivia == True:
   print("c) Berlín")
   print("d) Nueva Delhi")
   
-  respuesta_2 = input("\nTu respuesta: ")
+  respuesta_2 = input("\nTu respuesta: ").lower()
   
   #Validacion Respuesta 2
   while respuesta_2 not in ("a", "b", "c", "d"):
@@ -110,7 +110,7 @@ while iniciar_trivia == True:
   print("c) Asia")
   print("d) Sur América")
   
-  respuesta_3 = input("\nTu respuesta: ")
+  respuesta_3 = input("\nTu respuesta: ").lower()
   
   #Validacion de Respuesta 3
   while respuesta_3 not in ("a", "b", "c", "d"):
@@ -141,7 +141,7 @@ while iniciar_trivia == True:
   print("c) China")
   print("d) Estados Unidos")
   
-  respuesta_4 = input("\nTu respuesta: ")
+  respuesta_4 = input("\nTu respuesta: ").lower()
   
   #Validacion Respuesta 4
   while respuesta_4 not in ("a", "b", "c", "d"):
@@ -174,7 +174,7 @@ while iniciar_trivia == True:
   print("c) Asunción")
   print("d) Cali")
   
-  respuesta_5 = input("\nTu respuesta: ")
+  respuesta_5 = input("\nTu respuesta: ").lower()
   
   #Validacion Respuesta 5
   while respuesta_5 not in ("a", "b", "c", "d"):
