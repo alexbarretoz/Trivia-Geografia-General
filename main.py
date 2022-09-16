@@ -7,6 +7,7 @@ import random
 puntaje = 0
 iniciar_trivia = True
 intentos = 0
+cuenta = []
 
 #color
 RED = '\033[31m'
@@ -202,13 +203,20 @@ while iniciar_trivia == True:
   print(MAGENTA+"\n¿Deseas intentar la trivia nuevamente?"+RESET)
   repetir_trivia = input("Ingresa 'si' para repetir, o cualquier tecla para finalizar: ").lower()
 
+
+  cuenta.append(puntaje)
   
   if repetir_trivia != "si":  
+     print("\n""Puntaje de",intentos, "intentos")
+     print(cuenta)
+    
      print("\n",nombre, GREEN+",Espero que lo hayas pasado bien, hasta pronto!"+RESET)
      iniciar_trivia = False  # evitamos que se repita.
 
   else:
      puntaje =random.randint(0, 10)
      print("\n",MAGENTA+"Te Regalaremos puntos al azar para aumentar tus posibilidades en el proximo intento "+RESET, puntaje," Puntos")
-   
-
+     
+          
+        
+    
